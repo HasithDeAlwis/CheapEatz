@@ -10,7 +10,8 @@ const config = {
     "@storybook/addon-svelte-csf",
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    "@storybook/addon-postcss",
   ],
   "framework": {
     "name": "@storybook/sveltekit",
