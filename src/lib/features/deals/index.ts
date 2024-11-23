@@ -1,0 +1,1 @@
+export { default as DealsPresenter } from './deals.presenter.svelte'
