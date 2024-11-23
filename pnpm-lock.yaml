@@ -45,6 +45,9 @@ importers:
       '@storybook/blocks':
         specifier: ^8.4.5
         version: 8.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.5(prettier@3.3.3))
+      '@storybook/builder-vite':
+        specifier: ^8.4.5
+        version: 8.4.5(storybook@8.4.5(prettier@3.3.3))(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))
       '@storybook/svelte':
         specifier: ^8.4.5
         version: 8.4.5(storybook@8.4.5(prettier@3.3.3))(svelte@5.2.7)
