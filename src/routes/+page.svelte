@@ -1,8 +1,14 @@
 <script lang="ts">
-	import { Button } from '$lib/shadcn/ui/button';
-	let { data }: { data: { title: string; content: string } } = $props();
+	import type { Deal } from '$lib/entities/deal';
+	import { DealsPresenter } from '$lib/features/deals';
+	let { data }: { data: { [key: string]: Deal[] } } = $props();
+	console.log(data);
 </script>
 
-<h1>{data.title}</h1>
-<div>{data.content}</div>
-<Button>Click MEEEE!!!</Button>
+<main class="p-3">
+	<div class="flex flex-col gap-y-4">
+		{#each Object.entries(data) as [category, deals]}
+			<DealsPresenter {category} {deals} />
+		{/each}
+	</div>
+</main>
